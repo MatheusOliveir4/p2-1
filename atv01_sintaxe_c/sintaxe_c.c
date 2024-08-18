@@ -15,12 +15,11 @@ void sumOfOddNumbersFromTenToHundred() {
         }
     }
 
-    printf("Soma: %d", sum);
+    printf("Soma dos números ímpares de 1 à 100: %d", sum);
 }
 
 void printThreeMultipleNumbersWithoutEndingWith3() {
     for (int i = 1; i <= 200; i++) {
-        printf(", ", i);
 
         if (i % 3 == 0 && i % 10 != 3) {
             printf("%d, ", i);
@@ -35,7 +34,7 @@ int main() {
     printf("\n\n");
     sumOfOddNumbersFromTenToHundred();
 
-    printf("\n\nMultiplos de 3 sem o terminar com 3:\n");
+    printf("\n\nMultiplos de 3 sem terminar com 3:\n");
     printThreeMultipleNumbersWithoutEndingWith3();
 
     printf("\n\n\n");
