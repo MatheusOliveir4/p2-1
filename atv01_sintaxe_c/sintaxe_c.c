@@ -19,23 +19,23 @@ void sumOfOddNumbersFromTenToHundred() {
 }
 
 void printThreeMultipleNumbersWithoutEndingWith3() {
-
     for (int i = 1; i <= 200; i++) {
-        if (i % 3 == 0) {
+        printf(", ", i);
+
+        if (i % 3 == 0 && i % 10 != 3) {
             printf("%d, ", i);
         }
     }
 }
 
 int main() {
+    printf("Números de 1 à 100:\n");
     printOneToHundredNumbers();
 
-    printf("\n\n\n");
-
+    printf("\n\n");
     sumOfOddNumbersFromTenToHundred();
 
-    printf("\n\n\n");
-
+    printf("\n\nMultiplos de 3 sem o terminar com 3:\n");
     printThreeMultipleNumbersWithoutEndingWith3();
 
     printf("\n\n\n");
