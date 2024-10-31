@@ -78,6 +78,8 @@ int main() {
             }
 
         }
+
+        liberarArquivo(arq, nomeArq);
     }
 
     return 0;
